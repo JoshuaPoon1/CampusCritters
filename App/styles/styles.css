@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0e5f7;
+    
+}
+
+.logo{
+    margin:0;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.app-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.user-profile .user-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+#map {
+    width: calc(100% - 400px);  /* Take the full width minus the side panel's width */
+    height: 100vh;              /* Full height of the viewport */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.xp{
+    font-family: 'Pixelify Sans', cursive;
+    color: rgba(0, 119, 255, 0.709);
+    font-size: 20px;
+
+}
+.quests{
+    position: absolute;
+    width: 15rem;
+    height:10rem;
+    top:2rem; 
+    right: 2rem;
+    background-color: rgb(92, 81, 255);
+    Z-INDEX: 9999999;
+    BORDER-RADIUS: 1rem;
+    border: 2px solid black;
+    color: white;
+
+    font-family: 'Pixelify Sans', cursive;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text{
+    margin-top: 0.5rem;
+    font-size: 19px;
+}
+
+
+.quests1-flex {
+    position: absolute; 
+    Z-INDEX: 99999999;
+    display: flex; /* Make it a flex container */
+    flex-direction: column;
+    top:15%;
+    left: 15%;
+    
+    font-family: 'Pixelify Sans', cursive;
+    color: white;
+
+  }
+  
+  .quests1-flex > div {
+    margin: 5px 0; /* Add margin for spacing between the child elements */
+  }
+  
+  /* Style the individual quest labels */
+  .quests1-flex > div:first-child {
+    font-weight: bold; /* Make the first child (Quest 1) bold */
+ 
+  }
+  
+  /* Style the individual quest descriptions */
+  .quests1-flex > div:last-child {
+    font-style: italic; /* Make the last child (Quest 2) italic */
+ 
+  }
+  
+
+  .qTitle{
+    font-size: 12px;
+
+  }
+
+  .reward{
+    font-size: 12px;
+    color: yellow;
+  }
+  
+  
+
+
+
+
+
+.section1{
+    border: 2px solid #333; /* Add a border to the outer container */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Add some padding */
+    width: 300px; /* Set a fixed width for the container */
+    background-color: #f0f0f0; /* Set a background color */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+}
+
+/* Style the "Events Happening now" header */
+.section1 > div:first-child {
+    background-color: #333; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 5px; /* Add padding to the header */
+    text-align: center; /* Center-align the header text */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
+/* Style the event details */
+.section1 .flex-column p {
+    margin: 10px 0; /* Add margin for spacing between event details */
+    font-family: Arial, sans-serif; /* Set the font */
+    font-size: 14px; /* Set the font size */
+}
+
+
+
+
+
+
+
+
+.name{
+    position:absolute;
+    top: 120px;
+    font-family: 'Pixelify Sans', cursive;
+    color: rgb(209, 111, 127);
+    
+
+}

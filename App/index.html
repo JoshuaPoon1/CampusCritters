@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    
+    <!--lastly-->
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Your Stylesheet link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/add.css">
+    <script src="scripts/messagingSystem.js" defer></script>
+    <!-- <script src="scripts/notifications.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <!-- Side Panel -->
+    <button id="hamburgerMenu" class="hamburger">&#9776;</button>
+    <div class="side-panel">
+        <div class="header-section">
+            <!-- Updated paths to your assets directory for images -->
+            <img src="images/campuscritters.png" alt="App Logo" class="app-logo">
+            <p class="name">CampusCritters</p>
+           <!-- <div class="login-form">
+                <h3>Login</h3>
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button onclick="submitLoginForm()">Login</button>
+                <span id="loginError" style="color: red;"></span>
+            </div>-->
+            <!-- User profile and XP system -->
+            <div class="user-profile">
+              
+                <p class="username">ScaryMonster42's profile</p>
+                
+                <!-- Experience System Elements -->
+<!-- Experience System Elements -->
+                <div class="xp-system">
+                    <div class="level">Level: <span id="userLevel">1</span></div>
+                    <div class="xp">XP: <span id="userXP">0</span>/<span id="xpToNextLevel">100</span></div>
+                    <div class="xp-bar">
+                        <div class="xp-fill" id="xpFill" style="width: 0%;"></div>
+                    </div>
+                  <!-- <button id="earnXPBtn" class="xp-button">Earn 20 XP</button>-->
+                </div>
+                <button id="openMessagingBtn" class="message-button">Open Messaging</button>
+                <button id="logoutBtn" class="logout-button" onclick="handleLogout()">Logout</button>
+            </div>
+        </div>
+        <div class="section1">
+
+            <div>
+                <p> Student Events Happening Now</p>
+            </div>
+
+            <div class="flex-column">
+                <p>Lecture on Science and Technology in the Modern World - Room 10 <span class="xp">60 XP</span></p>
+                <p>Outdoor Sports Tournament - Campus Sports Field  <span class="xp">90 XP</span> </p>
+                <p>Art Exhibition - Student Union Hall  <span class="xp">30 XP</span></p>
+                <p>Student Club Meeting - Room 202  <span class="xp">20 XP</span></p>
+               
+
+            </div>
+
+        </div>
+ 
+
+        <a class="custom-button" href="https://studentsuccess.ufl.edu/campus-resources/" target="_blank">
+
+            Campus Resources
+
+        </a>
+
+        <!-- ... Rest of Side Panel and Placeholder for map ... -->
+
+    </div>
+    <!-- <div class="messaging-panel" >
+        <div class="contacts">
+            <div class="contact" onclick="openChat('John')">John</div>
+            <div class="contact" onclick="openChat('Jane')">Jane</div>
+          
+        </div>
+      <div class="chat-window">
+            <div class="chat-header" id="chatHeader">Select a contact to start chatting</div>
+            <div class="messages" id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        
+    </div> -->
+
+
+    <!-- Placeholder for the map -->
+    <div id="map"></div>
+
+    <div class="quests">
+         <p class="text">DAILY QUESTS</p>
+         <div class="quests1-flex">
+            <div>
+                <h1 class="qTitle">QUEST 1: Meet two new people</h1>
+                <p class="reward">Reward: 50 xp</p>
+            </div>
+            <div>
+                <h1 class="qTitle">QUEST 2: Join a group</h1>
+                <p class="reward">Reward: 400 xp</p>
+            </div>
+        </div>
+    
+    </div>
+    <div id="my-ai-chatbot" ></div>
+
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/notifications.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Your Script link and Experience System Script -->
+    <script src="messagingSystem.js"></script>
+    <script src="scripts/experienceSystem.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/map.js"></script>
+    <script type="text/javascript" src="https://bot.insertchatgpt.com/widgets/bubble.js?widget_id=1645e416-a48c-4b38-b416-9dfdfa283b6b" async></script>
+
+</body>
+</html>
